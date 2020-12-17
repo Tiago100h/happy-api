@@ -14,5 +14,7 @@ routes.post("/orphanages", upload.array('images'), OrphanagesController.create);
 
 routes.post('/register', UsersController.create);
 routes.post('/authenticate', UsersController.authenticate);
+routes.post('/forgot_password', UsersController.forgotPassword);
+routes.post('/reset_password', UsersController.resetPassword);
 
 export default routes;
